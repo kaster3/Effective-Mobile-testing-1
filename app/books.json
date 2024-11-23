@@ -19,5 +19,12 @@
         "author": "Albec Ruso",
         "year": 1979,
         "status": "В наличии"
+    },
+    {
+        "id": 4,
+        "title": "Dune",
+        "author": "Vasya Pupkin",
+        "year": 1962,
+        "status": "Выдана"
     }
 ]
