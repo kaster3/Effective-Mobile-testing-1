@@ -1,5 +1,4 @@
-from .storage import Storage
-from .model import Book, BookStatus
+from app import Storage, Book, BookStatus
 
 
 class LibraryCRUD:
