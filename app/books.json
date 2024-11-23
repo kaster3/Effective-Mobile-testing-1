@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Traveling",
+        "author": "Shara",
+        "year": 1999,
+        "status": "В наличии"
+    },
+    {
+        "id": 2,
+        "title": "Traveling",
+        "author": "John Smith",
+        "year": 1999,
+        "status": "В наличии"
+    },
+    {
+        "id": 3,
+        "title": "Terminator",
+        "author": "Albec Ruso",
+        "year": 1979,
+        "status": "В наличии"
+    }
+]
