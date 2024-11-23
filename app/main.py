@@ -1,6 +1,6 @@
-from .service_layer import Service
-from .library import LibraryCRUD
-from .storage import Storage
+from service_layer import Service
+from library import LibraryCRUD
+from storage import Storage
 
 
 def main() -> None:
@@ -42,4 +42,4 @@ if __name__ == "__main__":
     try:
         main()
     except Exception as exc:
-        print(f"Кажется это операция не работает, свяжитесь с разработчиком.\n{exc}")
+        print(f"Кажется это операция не работает, свяжитесь с разработчиком.\n{exc.__class__.__name__} -> {exc}")
