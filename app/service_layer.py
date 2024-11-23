@@ -32,7 +32,11 @@ class Service:
         Метод для получения ID книги от пользователя и вызов метода удаления у LibraryCRUD,
         если такая книга есть в библиотеке.
         """
-        book_id = int(input("Введите ID книги для удаления: "))
+        try:
+            book_id = int(input("Введите ID книги для удаления: "))
+        except ValueError:
+            print(f"\n!!!ID должно быть целым числом!!!\n")
+            return
         book = self.library.get_book_by_id(book_id)
         if book:
             self.library.remove_book(book=book)
@@ -81,7 +85,11 @@ class Service:
         Метод, который получает BOOK по ID книги введенным пользователем и если она существует,
         то вызываем метод изменения статуса книги через LibraryCRUD
         """
-        book_id = int(input("Введите ID книги для изменения статуса: "))
+        try:
+            book_id = int(input("Введите ID книги для изменения статуса: "))
+        except ValueError:
+            print("\n!!!ID должно быть целым числом!!!\n")
+            return
         book = self.library.get_book_by_id(book_id)
         if book:
             new_status = input(
